@@ -1,0 +1,38 @@
+body {
+  background-color: #f4f4f4;
+  color: #555;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+h3 {
+  font-family: cursive;
+}
+
+.user-character {
+  font-family: fantasy;
+  font-weight: bold;
+}
+
+.name-highlighter {
+  background-color: cadetblue;
+  color: #ffffff;
+}
+
+.mood-label::after {
+  content: ' : ';
+}
+.mood-image {
+  height: 300px;
+  width: 300px;
+}
+
+.footer-image {
+  height: 40px;
+  width: 150px;
+}
