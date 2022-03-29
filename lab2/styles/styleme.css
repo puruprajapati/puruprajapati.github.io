@@ -36,3 +36,7 @@ h3 {
   height: 40px;
   width: 150px;
 }
+
+a:hover {
+  text-decoration: underline;
+}
