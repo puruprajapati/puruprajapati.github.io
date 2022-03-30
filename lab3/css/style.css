@@ -1,0 +1,147 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  border: 0;
+  vertical-align: baseline;
+  background-color: #f4f4f4;
+  color: #555;
+  font-family: georgia, sans-serif;
+  font-size: 1.5em;
+  background-image: url('../images/background.image.jpg');
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+header {
+  padding-top: 3em;
+}
+
+h1 {
+  font-size: 4em;
+  color: crimson;
+}
+
+h2 {
+  font-size: 2em;
+  color: chocolate;
+}
+h3 {
+  font-size: 1.5em;
+  color: crimson;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+
+ 
+ 
+
+  padding: 20px;
+}
+
+#header {
+  height: 20em;
+  background-image: url('../images/banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+
+}
+
+#footer{
+  background-image: url('../images/background.image.jpg');
+}
+
+
+.section{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; 
+  justify-content: space-between;
+  margin: 4px;
+  padding: 4px;
+}
+
+.section-1{
+flex:1;
+order: 1;
+}
+
+.section-2{
+flex:1;
+order: 2;
+}
+
+.section-image{
+  flex:1;
+  width: 200;
+  height: 200;
+  margin: 4px;
+  padding: 4px;
+}
+
+.section-desc{
+  flex:4;
+  margin: 4px;
+  padding: 4px;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns:45% 2% 45% ;
+  /* grid-column-gap: 1em; */
+}
+
+a:link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #80156e;
+}
+a:visited {
+  font-weight: bold;
+  text-decoration: none;
+  color: #1c69b1;
+}
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+  color: #9685ba;
+}
+abbr {
+  border-bottom: none;
+}
+
+footer {
+  text-align: center;
+}
+footer a:link,
+footer a:visited {
+  margin-right: 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  line-height: 1.3em;
+  display: block;
+  padding-top: 5px;
+  margin-bottom: 5px;
+  list-style-type: none;
+}
+li a:link {
+  color: #336e8a;
+}
+li a:visited {
+  color: #1c69b1;
+}
