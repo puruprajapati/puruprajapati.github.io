@@ -117,6 +117,8 @@ const subract = function (x, y) {
   return x - y;
 }
 
+//  destructuring
+
 console.log(subract(5, 1));
 
 
