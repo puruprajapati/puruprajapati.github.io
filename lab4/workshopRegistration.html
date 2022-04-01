@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+
+<body>
+  <div class="form">
+    <form action="#">
+      <div class="form-header">
+        <h3>Workshop Registration</h3>
+      </div>
+
+      <div class="form-body">
+        <p class="link">Register now while seats are available!</p>
+        <div class="form-content">
+          <div class="form-left-content">
+            <div class="field">
+              <label class="required" for="fName">First Name</label>
+              <input id="fName" name="fName" type="text" required />
+            </div>
+            <div class="field">
+              <label class="required" for="lName">Last Name</label>
+              <input id="lName" name="lName" type="text" />
+            </div>
+            <div class="field">
+              <label class="required" for="companyInstitution">Commpany Institution</label>
+              <input id="companyInstitution" name="companyInstitution" type="text" />
+            </div>
+            <div class="field">
+              <label class="required" for="address">Address</label>
+              <textarea></textarea>
+            </div>
+            <div class="field">
+              <label for="state">State/ Porvince/ Region</label>
+              <select id="state" name="state">
+                <option>-Select-</option>
+                <option>IA</option>
+                <option>CD</option>
+                <option>VR</option>
+                <option>CA</option>
+                <option>DC</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option>-Select-</option>
+                <option>United States of America</option>
+                <option>Canada</option>
+                <option>Nepal</option>
+                <option>China</option>
+              </select>
+            </div>
+            <div class="field">
+              <label class="required" for="email">Email</label>
+              <input id="email" name="email" type="email" />
+            </div>
+            <div class="field">
+              <label class="required" for="phNumber">Phone Number</label>
+              <input id="phNumber" name="phNumber" type="text" />
+            </div>
+          </div>
+
+          <div class="form-right-content">
+            <p class="link">Lunch</p>
+            <div class="field">
+
+              <label for="mealPref">Meal Preferences</label>
+              <select id="mealPref" name="mealPref">
+                <option>-Select-</option>
+                <option>Vegeterian</option>
+                <option>Non-Vegeterian</option>
+                <option>Vegan</option>
+              </select>
+            </div>
+            <p class="link">Payment Details</p>
+            <div class="field">
+              <label for="paymentMode">Payment Mode</label>
+              <div class="checkbox">
+                <div>
+                  <input type="checkbox" id="cash" name="cash">
+                  <label for="cash"> <span>Cash</span>
+                  </label>
+                </div>
+                <div>
+                  <input type="checkbox" id="cheque" name="cheque">
+                  <label for="cheque">
+                    <span>Cheque</span>
+                  </label>
+                </div>
+                <label for="demandDraft">
+                  <input type="checkbox" id="demandDraft" name="demandDraft">
+                  <span>Demand Draft</span>
+                </label>
+              </div>
+            </div>
+            <div class="field">
+              <label for="chqNumber">DD/Cheque No.</label>
+              <input id="chqNumber" name="chqNumber" type="text" />
+            </div>
+            <div class="field">
+              <label for="drawnOn">Drawn on (Bank Name)</label>
+              <input id="drawnOn" name="drawnOn" type="text" />
+            </div>
+            <div class="field">
+              <label for="paybleAt">Payable at</label>
+              <input id="paybleAt" name="paybleAt" type="text" />
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="form-footer">
+        <input class="btn" type="submit" />
+        <input class="btn" type="reset" />
+      </div>
+
+    </form>
+
+  </div>
+  <footer>
+    <a href="https://validator.w3.org/nu/?doc=https://puruprajapati.github.io/lab4/workshopRegistration.html">
+      <img class="footer-image" src="../lab2/images/HTML-checker.png" alt="Validate" />
+    </a>
+
+
+    <a
+      href="https://jigsaw.w3.org/css-validator/validator?uri=https://puruprajapati.github.io/lab4/workshopRegistration.html">
+      <img class="footer-image" src="../lab2/images/css_checker.png" alt="Valid CSS!" />
+    </a>
+  </footer>
+
+</body>
+
+</html>
