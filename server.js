@@ -1,4 +1,5 @@
 const express = require('express');
+const { get } = require('https');
 const app = express();
 const port = process.env.PORT || 5000;
 /*
@@ -99,7 +100,7 @@ stooges[4] = "Shemp"; // stooges.length is 5
 console.log(stooges);
 
 
-*/
+
 
 const a = [1, 2, 3, 5, 4, 5, 6];
 a.map((element, i, array) => {
@@ -116,10 +117,37 @@ function add(x, y) {
 const subract = function (x, y) {
   return x - y;
 }
+console.log(subract(5, 1));
 
 //  destructuring
+let options = {
+  title: "Menu",
+  width: 100,
+  height: 200
+}
 
-console.log(subract(5, 1));
+let { width: w, height: h, title, volume = 10000 } = options;
+console.log(w, h, title, volume);
+
+*/
+
+
+// function declaration
+function sum(arr) {
+  return arr.filter(element => element > 20).reduce((a, b) => a + b);
+}
+
+console.log(sum([11, 21, 23, 22, 44]));
+
+// function expression
+const getNewArray = input => {
+  return input.filter(element => element.length >= 5 && element.includes('a'))
+};
+
+console.log(getNewArray(['ramadin', 'notramadin', 'hellooo', 'a', 'how you?']))
+
+
+
 
 
 app.listen(port, () => console.log(`Listening on port ${port}`)); 
